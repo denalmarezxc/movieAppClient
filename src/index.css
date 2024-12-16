@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.movie-card {
+  max-width: 100%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure content is within the card */
+}
+
+.movie-image {
+  max-height: 300px; /* Set a fixed max height for image */
+  object-fit: cover; /* Make sure the image covers the space without stretching */
+}
+
+.movie-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.movie-desc {
+  padding: 15px;
+}
+
+.movie-description {
+  font-size: 1.1rem;
+  color: #555; /* Darker color for description text */
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    margin: 15px;
+  }
+
+  .movie-title {
+    font-size: 1.5rem; /* Smaller title for smaller screens */
+  }
+
+  .movie-description {
+    font-size: 1rem; /* Adjust description font size for mobile */
+  }
+}
